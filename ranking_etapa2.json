@@ -5,6 +5,14 @@
     11,
     12
   ],
+  "ano_campanha": 2026,
+  "ano_base": 2025,
+  "crescimento_minimo_pct": 15.0,
+  "criterio_ranking": [
+    "volume",
+    "faturamento_liquido"
+  ],
   "vendedores": [],
+  "inelegiveis": [],
   "supervisores": []
 }

@@ -1,10 +1,89 @@
 [
   {
+    "ano": 2025,
+    "mes": "Julho",
+    "numero_mes": 7,
+    "trimestre": "Q3",
+    "etapa": "ETAPA1",
+    "volume": 53283.0,
+    "venda_bruta": 496664.16,
+    "devolucao": 4449.38,
+    "faturamento_liquido": 492214.78,
+    "positivacao": 1585,
+    "vendedores_ativos": 39
+  },
+  {
+    "ano": 2025,
+    "mes": "Agosto",
+    "numero_mes": 8,
+    "trimestre": "Q3",
+    "etapa": "ETAPA1",
+    "volume": 44225.0,
+    "venda_bruta": 425429.03,
+    "devolucao": 5034.8,
+    "faturamento_liquido": 420394.23,
+    "positivacao": 1456,
+    "vendedores_ativos": 40
+  },
+  {
+    "ano": 2025,
+    "mes": "Setembro",
+    "numero_mes": 9,
+    "trimestre": "Q3",
+    "etapa": "ETAPA1",
+    "volume": 45508.0,
+    "venda_bruta": 443996.47,
+    "devolucao": 8699.11,
+    "faturamento_liquido": 435297.36,
+    "positivacao": 1506,
+    "vendedores_ativos": 39
+  },
+  {
+    "ano": 2025,
+    "mes": "Outubro",
+    "numero_mes": 10,
+    "trimestre": "Q4",
+    "etapa": "ETAPA2",
+    "volume": 44840.0,
+    "venda_bruta": 437143.34,
+    "devolucao": 7936.2,
+    "faturamento_liquido": 429207.14,
+    "positivacao": 1458,
+    "vendedores_ativos": 40
+  },
+  {
+    "ano": 2025,
+    "mes": "Novembro",
+    "numero_mes": 11,
+    "trimestre": "Q4",
+    "etapa": "ETAPA2",
+    "volume": 38877.0,
+    "venda_bruta": 381714.8,
+    "devolucao": 12915.27,
+    "faturamento_liquido": 368799.53,
+    "positivacao": 1419,
+    "vendedores_ativos": 40
+  },
+  {
+    "ano": 2025,
+    "mes": "Dezembro",
+    "numero_mes": 12,
+    "trimestre": "Q4",
+    "etapa": "ETAPA2",
+    "volume": 53096.0,
+    "venda_bruta": 511370.87,
+    "devolucao": 8754.37,
+    "faturamento_liquido": 502616.5,
+    "positivacao": 1481,
+    "vendedores_ativos": 40
+  },
+  {
+    "ano": 2026,
     "mes": "Janeiro",
     "numero_mes": 1,
     "trimestre": "Q1",
     "etapa": "",
-    "volume": 45825.0,
+    "volume": 45150.0,
     "venda_bruta": 441725.2,
     "devolucao": 6066.45,
     "faturamento_liquido": 435658.75,
@@ -12,11 +91,12 @@
     "vendedores_ativos": 41
   },
   {
+    "ano": 2026,
     "mes": "Fevereiro",
     "numero_mes": 2,
     "trimestre": "Q1",
     "etapa": "",
-    "volume": 39845.0,
+    "volume": 39058.0,
     "venda_bruta": 381903.36,
     "devolucao": 7751.23,
     "faturamento_liquido": 374152.13,
@@ -24,11 +104,12 @@
     "vendedores_ativos": 43
   },
   {
+    "ano": 2026,
     "mes": "Março",
     "numero_mes": 3,
     "trimestre": "Q1",
     "etapa": "",
-    "volume": 48676.0,
+    "volume": 47557.0,
     "venda_bruta": 459392.23,
     "devolucao": 10381.41,
     "faturamento_liquido": 449010.82,
@@ -36,11 +117,12 @@
     "vendedores_ativos": 42
   },
   {
+    "ano": 2026,
     "mes": "Abril",
     "numero_mes": 4,
     "trimestre": "Q2",
     "etapa": "",
-    "volume": 48475.0,
+    "volume": 47006.0,
     "venda_bruta": 489062.09,
     "devolucao": 13629.77,
     "faturamento_liquido": 475432.32,
@@ -48,11 +130,12 @@
     "vendedores_ativos": 43
   },
   {
+    "ano": 2026,
     "mes": "Maio",
     "numero_mes": 5,
     "trimestre": "Q2",
     "etapa": "",
-    "volume": 47069.0,
+    "volume": 45290.0,
     "venda_bruta": 490495.24,
     "devolucao": 19086.28,
     "faturamento_liquido": 471408.96,
@@ -60,11 +143,12 @@
     "vendedores_ativos": 42
   },
   {
+    "ano": 2026,
     "mes": "Junho",
     "numero_mes": 6,
     "trimestre": "Q2",
     "etapa": "",
-    "volume": 50814.0,
+    "volume": 50207.0,
     "venda_bruta": 528867.75,
     "devolucao": 6138.05,
     "faturamento_liquido": 522729.7,
@@ -72,11 +156,12 @@
     "vendedores_ativos": 46
   },
   {
+    "ano": 2026,
     "mes": "Julho",
     "numero_mes": 7,
     "trimestre": "Q3",
     "etapa": "ETAPA1",
-    "volume": 56597.0,
+    "volume": 54444.0,
     "venda_bruta": 591251.31,
     "devolucao": 22352.51,
     "faturamento_liquido": 568898.8,
@@ -84,15 +169,16 @@
     "vendedores_ativos": 40
   },
   {
+    "ano": 2026,
     "mes": "Agosto",
     "numero_mes": 8,
     "trimestre": "Q3",
     "etapa": "ETAPA1",
-    "volume": 10935.0,
-    "venda_bruta": 112736.91,
-    "devolucao": 4743.33,
-    "faturamento_liquido": 107993.58,
-    "positivacao": 580,
+    "volume": 14555.0,
+    "venda_bruta": 159071.59,
+    "devolucao": 6044.22,
+    "faturamento_liquido": 153027.37,
+    "positivacao": 715,
     "vendedores_ativos": 42
   }
 ]
