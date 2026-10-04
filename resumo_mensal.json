@@ -174,11 +174,37 @@
     "numero_mes": 8,
     "trimestre": "Q3",
     "etapa": "ETAPA1",
-    "volume": 14555.0,
-    "venda_bruta": 159071.59,
-    "devolucao": 6044.22,
-    "faturamento_liquido": 153027.37,
-    "positivacao": 715,
+    "volume": 44598.0,
+    "venda_bruta": 476680.99,
+    "devolucao": 12445.96,
+    "faturamento_liquido": 464235.03,
+    "positivacao": 1528,
     "vendedores_ativos": 42
+  },
+  {
+    "ano": 2026,
+    "mes": "Setembro",
+    "numero_mes": 9,
+    "trimestre": "Q3",
+    "etapa": "ETAPA1",
+    "volume": 46115.0,
+    "venda_bruta": 500482.2,
+    "devolucao": 13054.22,
+    "faturamento_liquido": 487427.98,
+    "positivacao": 1488,
+    "vendedores_ativos": 41
+  },
+  {
+    "ano": 2026,
+    "mes": "Outubro",
+    "numero_mes": 10,
+    "trimestre": "Q4",
+    "etapa": "ETAPA2",
+    "volume": 1773.0,
+    "venda_bruta": 20679.07,
+    "devolucao": 1484.92,
+    "faturamento_liquido": 19194.15,
+    "positivacao": 139,
+    "vendedores_ativos": 33
   }
 ]

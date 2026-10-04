@@ -75,7 +75,7 @@
     <!-- ══════════════ ABA 1: VISÃO GERAL ANUAL ══════════════ -->
     <div id="tab-geral" class="grid grid-cols-1 lg:grid-cols-5 gap-6 animate-fadeIn">
 
-        <!-- FILTROS -->
+        <!-- FILTROS MULTIPLOS -->
         <section class="lg:col-span-1 bg-darkCard p-4 rounded-xl border border-orange-900/50 flex flex-col gap-4 card-glow">
             <div class="flex justify-between items-center">
                 <h2 class="text-divYellow font-bold text-sm tracking-wider uppercase">Filtros</h2>
@@ -83,24 +83,24 @@
             </div>
             <div class="space-y-3">
                 <div>
-                    <label class="block text-xs text-slate-400 mb-1">Marca</label>
-                    <select id="filter-marca" onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none"></select>
+                    <label class="block text-xs text-slate-400 mb-1">Marca (Múltiplo)</label>
+                    <select id="filter-marca" multiple onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none h-20 custom-multiselect"></select>
                 </div>
                 <div>
-                    <label class="block text-xs text-slate-400 mb-1">Ano</label>
-                    <select id="filter-ano" onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none"></select>
+                    <label class="block text-xs text-slate-400 mb-1">Ano (Múltiplo)</label>
+                    <select id="filter-ano" multiple onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none h-20 custom-multiselect"></select>
                 </div>
                 <div>
-                    <label class="block text-xs text-slate-400 mb-1">Mês</label>
-                    <select id="filter-mes" onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none"></select>
+                    <label class="block text-xs text-slate-400 mb-1">Mês (Múltiplo)</label>
+                    <select id="filter-mes" multiple onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none h-24 custom-multiselect"></select>
                 </div>
                 <div>
-                    <label class="block text-xs text-slate-400 mb-1">Supervisor</label>
-                    <select id="filter-supervisor" onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none"></select>
+                    <label class="block text-xs text-slate-400 mb-1">Supervisor (Múltiplo)</label>
+                    <select id="filter-supervisor" multiple onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none h-24 custom-multiselect"></select>
                 </div>
                 <div>
-                    <label class="block text-xs text-slate-400 mb-1">Vendedor</label>
-                    <select id="filter-vendedor" onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none"></select>
+                    <label class="block text-xs text-slate-400 mb-1">Vendedor (Múltiplo)</label>
+                    <select id="filter-vendedor" multiple onchange="updateDashboard()" class="w-full bg-darkBg border border-orange-900/60 rounded-lg p-2 text-sm text-slate-200 focus:border-divYellow outline-none h-24 custom-multiselect"></select>
                 </div>
             </div>
         </section>
@@ -212,7 +212,7 @@
             <div class="absolute right-0 top-0 opacity-10 text-[200px] pointer-events-none translate-x-1/4 -translate-y-1/4">🏆</div>
             <div class="flex-1 z-10">
                 <div class="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase mb-4">
-                    Etapa 1 · Julho a Setembro
+                    Etapa 1 · Julho a Setembro 2026
                 </div>
                 <h2 class="text-4xl font-black text-white mb-3 leading-tight drop-shadow">"Aquecimento<br>dos Campeões"</h2>
                 <p class="text-white/90 text-sm max-w-2xl leading-relaxed mb-4">
@@ -221,10 +221,24 @@
                     Vendedores novatos (sem histórico) precisam atingir <b>3.000 unidades</b> como ponto de partida.
                     O desbloqueio da premiação depende do crescimento no setor de compras (informado pelo comprador).
                 </p>
-                <div class="bg-black/30 border border-white/20 p-3 rounded-xl text-xs text-white/80 mb-4">
-                    <p class="font-bold text-white mb-1"><i class="fa-solid fa-info-circle mr-1"></i> Objetivo Geral da Campanha</p>
-                    <p>A empresa precisa atingir no mínimo <b>R$ 585.000,00 em cada mês</b> de julho, agosto e setembro, totalizando <b>R$ 1.770.000,00 no trimestre</b>.</p>
+                
+                <!-- METAS E REALIZADO (FILTRADO POR 2026) -->
+                <div class="bg-black/30 border border-white/20 p-4 rounded-xl text-xs text-white/80 mb-4">
+                    <p class="font-bold text-white text-sm mb-2"><i class="fa-solid fa-bullseye mr-1.5 text-divYellow"></i> Objetivo Geral da Campanha (2026)</p>
+                    <p class="mb-3">A empresa precisa atingir no mínimo <b>R$ 585.000,00 em cada mês</b> de julho, agosto e setembro, totalizando <b>R$ 1.770.000,00 no trimestre</b>.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-white/10">
+                        <div class="bg-white/10 p-2.5 rounded-lg border border-white/10">
+                            <span class="text-[10px] text-white/70 uppercase block font-semibold">Faturamento Realizado (Jul-Set 2026)</span>
+                            <span id="etapa1-fat-realizado" class="text-lg font-black text-divYellow">R$ 0,00</span>
+                        </div>
+                        <div class="bg-white/10 p-2.5 rounded-lg border border-white/10">
+                            <span class="text-[10px] text-white/70 uppercase block font-semibold">Atingimento do Objetivo Trimestral</span>
+                            <span id="etapa1-pct-objetivo" class="text-lg font-black text-emerald-400">0,0%</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div class="bg-black/30 p-4 rounded-xl border border-white/20 text-center">
                         <p class="text-xs text-white/70 uppercase font-bold mb-2">Premiação Total</p>
@@ -272,7 +286,7 @@
             <div class="absolute right-0 top-0 opacity-10 text-[200px] pointer-events-none translate-x-1/4 -translate-y-1/4">🏁</div>
             <div class="flex-1 z-10">
                 <div class="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase mb-4">
-                    Etapa 2 · Outubro a Dezembro
+                    Etapa 2 · Outubro a Dezembro 2026
                 </div>
                 <h2 class="text-4xl font-black text-white mb-3 leading-tight drop-shadow">"Corrida para<br>o Pódio"</h2>
                 <p class="text-white/90 text-sm max-w-2xl leading-relaxed mb-4">
@@ -414,6 +428,25 @@
     const calcGrowth = (a, b) => (!b || b === 0) ? 0 : ((a - b) / b) * 100;
     const closeModal = id => document.getElementById(id).classList.add('hidden');
 
+    function enableToggleMultiSelect() {
+        document.querySelectorAll('select.custom-multiselect').forEach(select => {
+            select.addEventListener('mousedown', function(e) {
+                e.preventDefault();
+                const option = e.target.closest('option');
+                if (!option) return;
+                option.selected = !option.selected;
+                select.focus();
+                select.dispatchEvent(new Event('change', { bubbles: true }));
+            });
+        });
+    }
+
+    function getSelectValues(id) {
+        const select = document.getElementById(id);
+        if (!select) return [];
+        return Array.from(select.selectedOptions).map(option => option.value).filter(val => val !== "");
+    }
+
     // ── Troca de abas ────────────────────────────────────────────────────────
     function switchTab(tabId) {
         ['geral','etapa1','etapa2'].forEach(t => {
@@ -447,47 +480,81 @@
 
             if (!globalData.length) { console.warn("Nenhum dado de transação carregado."); }
             populateFilters();
+            enableToggleMultiSelect();
             updateDashboard();
+            updateEtapa1HeaderKPIs();
         });
 
         switchTab('geral');
     });
 
-    // ── Filtros ──────────────────────────────────────────────────────────────
+    // ── Filtros com Ordenação Cronológica ───────────────────────────────────
     function populateFilters() {
         const build = (id, items) => {
             const el = document.getElementById(id);
-            if (el) el.innerHTML = `<option value="">Todos</option>` +
-                [...new Set(items)].filter(Boolean).sort().map(i => `<option value="${i}">${i}</option>`).join('');
+            if (el) el.innerHTML = [...new Set(items)].filter(Boolean).sort().map(i => `<option value="${i}">${i}</option>`).join('');
         };
+
+        const buildMeses = (id, items) => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const unicos = [...new Set(items)].filter(Boolean);
+            unicos.sort((a, b) => mesesOrdem.indexOf(a) - mesesOrdem.indexOf(b));
+            el.innerHTML = unicos.map(i => `<option value="${i}">${i}</option>`).join('');
+        };
+
         build('filter-marca',      globalData.map(d => d.Marca));
         build('filter-ano',        globalData.map(d => d.Ano));
-        build('filter-mes',        globalData.map(d => d.Mês));
+        buildMeses('filter-mes',   globalData.map(d => d.Mês));
         build('filter-supervisor', globalData.map(d => d.Supervisor));
         build('filter-vendedor',   globalData.map(d => d.Vendedor));
     }
 
     function clearFilters() {
         ['filter-marca','filter-ano','filter-mes','filter-supervisor','filter-vendedor'].forEach(id => {
-            const el = document.getElementById(id); if (el) el.value = '';
+            const el = document.getElementById(id);
+            if (el) Array.from(el.options).forEach(o => o.selected = false);
         });
         closeSupervisorTeam();
         updateDashboard();
     }
 
     function getFiltered() {
-        const fM  = document.getElementById('filter-marca').value;
-        const fA  = document.getElementById('filter-ano').value;
-        const fMe = document.getElementById('filter-mes').value;
-        const fS  = document.getElementById('filter-supervisor').value;
-        const fV  = document.getElementById('filter-vendedor').value;
+        const fM  = getSelectValues('filter-marca');
+        const fA  = getSelectValues('filter-ano');
+        const fMe = getSelectValues('filter-mes');
+        const fS  = getSelectValues('filter-supervisor');
+        const fV  = getSelectValues('filter-vendedor');
         return globalData.filter(d =>
-            (!fM  || d.Marca      === fM)  &&
-            (!fA  || String(d.Ano) === fA) &&
-            (!fMe || d.Mês        === fMe) &&
-            (!fS  || d.Supervisor === fS)  &&
-            (!fV  || d.Vendedor   === fV)
+            (fM.length === 0  || fM.includes(d.Marca)) &&
+            (fA.length === 0  || fA.includes(String(d.Ano))) &&
+            (fMe.length === 0 || fMe.includes(d.Mês)) &&
+            (fS.length === 0  || fS.includes(d.Supervisor)) &&
+            (fV.length === 0  || fV.includes(d.Vendedor))
         );
+    }
+
+    // ── Atualiza KPIs da Etapa 1 FILTRANDO EXCLUSIVAMENTE POR 2026 ───────────
+    function updateEtapa1HeaderKPIs() {
+        const mesesEtapa1 = ["Julho", "Agosto", "Setembro"];
+        
+        // Filtra apenas os registros dos meses da Etapa 1 referentes ao ano de 2026
+        const dadosJulSet2026 = globalData.filter(d => 
+            mesesEtapa1.includes(d.Mês) && (String(d.Ano) === '2026' || d.Ano === 2026)
+        );
+        
+        const totalFatJulSet2026 = dadosJulSet2026.reduce((acc, item) => acc + parseFloat(item.FaturamentoLiquido || 0), 0);
+        const metaTrimestral = 1770000.00; // R$ 1.770.000,00
+        const pctAtingido = metaTrimestral > 0 ? (totalFatJulSet2026 / metaTrimestral) * 100 : 0;
+
+        const elFat = document.getElementById('etapa1-fat-realizado');
+        const elPct = document.getElementById('etapa1-pct-objetivo');
+
+        if (elFat) elFat.innerText = fmtCur(totalFatJulSet2026);
+        if (elPct) {
+            elPct.innerText = `${pctAtingido.toFixed(1)}%`;
+            elPct.className = `text-lg font-black ${pctAtingido >= 100 ? 'text-emerald-400' : 'text-amber-400'}`;
+        }
     }
 
     // ── Dashboard Geral ──────────────────────────────────────────────────────
@@ -888,7 +955,8 @@
                     </div>
                 </div>
                 <div class="text-right shrink-0">
-                    <div class="text-[10px] text-slate-400">Volume</div>
+                    <div class="text-[10px] text-slate-400">Fat. Líquido & Volume</div>
+                    <div class="text-xs font-bold text-divYellow">${fat}</div>
                     <div class="text-xs font-bold text-divOrange">${vol} un</div>
                     <div class="text-[10px] text-slate-500 mt-0.5">${pos} clt</div>
                     <div class="text-[10px] mt-0.5 ${isElegivel ? 'text-emerald-400' : 'text-red-400'}">
@@ -938,7 +1006,8 @@
                     <p class="text-[10px] ${cresc.classe} font-bold">▲ vs ${anoBase}: ${cresc.texto}</p>
                 </div>
                 <div class="text-right shrink-0">
-                    <div class="text-[10px] text-slate-400">Volume</div>
+                    <div class="text-[10px] text-slate-400">Fat. Líquido & Volume</div>
+                    <div class="text-xs font-bold text-divYellow">${fat}</div>
                     <div class="text-xs font-bold text-divOrange">${vol} un</div>
                     <div class="text-[10px] text-slate-500 mt-0.5">${pos} clt</div>
                     <div class="text-[10px] mt-0.5 ${atingiu ? 'text-emerald-400' : 'text-red-400'}">
