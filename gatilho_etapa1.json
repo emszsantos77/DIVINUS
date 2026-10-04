@@ -6,19 +6,19 @@
     "bateu_meta": false
   },
   "Agosto": {
-    "faturamento": 153027.37,
+    "faturamento": 464235.03,
     "meta_mensal": 585000.0,
-    "percentual_meta": 26.16,
+    "percentual_meta": 79.36,
     "bateu_meta": false
   },
   "Setembro": {
-    "faturamento": 0.0,
+    "faturamento": 487427.98,
     "meta_mensal": 585000.0,
-    "percentual_meta": 0.0,
+    "percentual_meta": 83.32,
     "bateu_meta": false
   },
-  "total_trimestral": 721926.17,
+  "total_trimestral": 1520561.81,
   "meta_trimestral": 1770000.0,
-  "percentual_meta_trimestral": 40.79,
+  "percentual_meta_trimestral": 85.91,
   "bateu_meta_trimestral": false
 }
